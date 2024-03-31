@@ -1,0 +1,66 @@
+// hero секция
+
+.hero {
+    // background-image: url(../img/hero/hero-bg.jpg);
+    // background-position:center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    
+
+
+     
+
+    // padding-bottom: 1000px;
+    
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+
+        justify-content: space-between;
+
+        gap: 1rem;
+
+        height: 100vh;
+
+        padding-bottom: 5rem;
+
+        @media (max-width:991px) {
+            padding-bottom: 2rem;
+        }
+        
+        
+    }
+    
+    &__text {
+        display: flex;
+        flex-direction: column;   
+
+        p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 119%;
+            color: #fff;
+
+            text-align: right;
+
+            @media (max-width:567px) {
+                 display: none;
+            }
+        }
+    }
+
+    img {
+        display: flex;
+        position: absolute;
+
+        width: 190vw;
+        height: 100vh;
+
+        object-fit: cover;
+
+        z-index: -5;
+    }
+}
